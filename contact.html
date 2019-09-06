@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <!-- icons library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/23325f0d76.js"></script>
+    <!-- Bootsrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>StyleMeUp</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <img class="img-fluid" src="./images/logoStyleMeUp.png" width="" alt="logo">
+            </div>
+            <div class="col-md-8 col-sm-8">
+                <br><br><br><br><br><br><br>
+                <h1 class="display-3">Welcome to StyleMeUp!</h1>
+                <br>
+            </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- <a class="navbar-brand" href="#"><img class="img-fluid" src="./images/logoStyleMeUp.png" alt="logo"></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-right">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="./services.html">Our Team </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="./location.html">Find us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./contact.html">Contact <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Main section -->
+    <section class="col-md-12 col-sm-12">
+        <div class="row">
+            <article class="col-md-6 col-sm-12">
+                <div class="row bg-gray">
+                    <div class="col-md-10 col-sm-12">
+                        <!-- Contact form -->
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                            <!--Name-->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                   <br> <input type="text" id="name" name="name" class="form-control" placeholder="John">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Surname-->
+                            <div class="row">
+                                <div class="col-md-4 col-md-4">
+                                    <input type="text" id="surname" name="surname" class="form-control"
+                                        placeholder="Smith">
+                                    <label for="name" class="">Your Surname</label>
+                                </div>
+                            </div>
+                            <!--Location-->
+                            <div class="row">
+                                <div class="col-md-4 col-md-4">
+                                    <input type="text" id="location" name="location" class="form-control"
+                                        placeholder="Brussels">
+                                    <label for="name" class="">Your Location</label>
+                                </div>
+                            </div>
+                            <!--Email-->
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="md-form">
+                                        <input type="text" id="email" name="email" class="form-control"
+                                            placeholder="john@smith.com">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Subject-->
+                            <div class="row">
+                                <div class="col-md-10 col-sm-10">
+                                    <div class="md-form">
+                                        <input type="text" id="subject" name="subject" class="form-control"
+                                            placeholder="Subject">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Message-->
+                            <div class="row">
+                                <div class="col-md-11 col-sm-11">
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"
+                                            placeholder="Write your message here..."></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Submit-->
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-info"
+                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+                            </div>
+                            <div class="status"></div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- JUMBOTRON -->
+            <aside class="col-md-6 col-sm-12">
+                <!-- jumbotron1 -->
+                <h1 class="display-4">Do you have any questions?</h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <p>Please fill in this form, or you might as well want to message us on Facebook or Instagram. We are
+                    always
+                    there for you!</p>
+                <!-- end jumbotron1-->
+                <!--Grid column-->
+                <div class="col-md-3">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>pl. Madou, Bruxelles - 1210</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 32 234 567 89</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@stylemeup.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </aside>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" col-md-12 col -sm-12 page-footer text-center">
+        <br>
+        <h6 class="text-uppercase font-weight-bold">Follow us on social media</h6><br>
+        <div class="social">
+            <a href="https://www.facebook.com/styleMeUpAlex/"><i class="fab fa-facebook-f fa-3x"></i></a>
+            <a href="https://www.instagram.com/alexandraet/"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="https://www.youtube.com/channel/UCvBZHwavdYNYhF11YR0L6KQ"><i
+                    class="fab fa-instagram fa-3x"></i></a>
+        </div>
+        <br>
+        <div class="footer-copyright text-center">© 2019 Copyright: StyleMeUp</div>
+    </footer>
+
+
+
+
+    <!-- JS files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
