@@ -17,11 +17,17 @@
 <body>
     <header class="banner">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sx-4">
                 <img class="img-fluid" src="./images/logoStyleMeUp.png" width="" alt="logo">
             </div>
-            <div class="col-md-8 col-sm-8">
-                <br><br><br><br><br><br><br>
+            <div class="col-md-8 col-sx-8">
+                <br>
+                <!-- Function JS type in name -->
+                <button class="btn btn-info btn-lg" onclick="myFunction()">Click me</button>
+                <h1 id="demo" style="color:#222"></h1>
+                <!-- or this color: #aaffc3" -->
+                <!-- end JS -->
+                <br>
                 <h1 class="display-3">Welcome to StyleMeUp!</h1>
                 <br>
             </div>
@@ -58,7 +64,7 @@
 
     <!-- Carousel -->
     <section class="row row-no-padding bg-gray">
-        <article class="col-md-6 col-sm-8">
+        <article class="col-md-6 col-sx-8">
             <!--  carousel start-->
             <div class="bd-example thumbnail">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -89,6 +95,48 @@
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
+                        <div class="carousel-item">
+                            <img src="./images/banner6.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/pex1.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/pex2.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/pex3.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/pex4.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/pex6.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cause you are worth it</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,7 +150,7 @@
                 <!-- end carousel -->
             </div>
         </article>
-        <aside class="col-md-6 col-sm-4">
+        <aside class="col-md-6 col-sx-4">
             <!-- jumbotron -->
             <div class="jumbotron jambotron-fluid">
                 <h1 class="display-4">Relax- your mobile hairdresser is here!</h1>
@@ -130,7 +178,7 @@
     </section>
 
     <!-- footer -->
-    <footer class=" col-md-12 col -sm-12 page-footer text-center">
+    <footer class=" col-md-12 col -sx-12 page-footer text-center">
         <br>
         <h6 class="text-uppercase font-weight-bold">Follow us on social media</h6><br>
         <div class="social">
@@ -142,18 +190,28 @@
         <div class="footer-copyright text-center">© 2019 Copyright: StyleMeUp</div>
     </footer>
 
+    <!-- JS script for name typing top of page -->
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
 
 
 
     <!-- JS files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5sxXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        integrity="sha384-JjsxVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
 

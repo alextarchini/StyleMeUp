@@ -17,10 +17,10 @@
 <body>
     <header class="banner">
         <div class="row">
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sx-4">
                 <img class="img-fluid" src="./images/logoStyleMeUp.png" width="" alt="logo">
             </div>
-            <div class="col-md-8 col-sm-8">
+            <div class="col-md-8 col-sx-8">
                 <br><br><br><br><br><br><br>
                 <h1 class="display-3">Welcome to StyleMeUp!</h1>
                 <br>
@@ -57,16 +57,16 @@
     <!-- navbar end -->
 
     <!-- Main section -->
-    <section class="col-md-12 col-sm-12">
+    <section class="col-md-12 col-sx-12">
         <div class="row">
-            <article class="col-md-6 col-sm-12">
+            <article class="col-md-6 col-sx-12" >
                 <div class="row bg-gray">
-                    <div class="col-md-10 col-sm-12">
+                    <div class="col-md-10 col-sx-12">
                         <!-- Contact form -->
                         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                             <!--Name-->
                             <div class="row">
-                                <div class="col-md-4 col-sm-4">
+                                <div class="col-md-4 col-sx-4">
                                     <br> <input type="text" id="name" name="name" class="form-control"
                                         placeholder="John">
                                     <label for="name" class="">Your name</label>
@@ -76,7 +76,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-md-4">
                                     <input type="text" id="surname" name="surname" class="form-control"
-                                        placeholder="Smith">
+                                        placeholder="sxith">
                                     <label for="name" class="">Your Surname</label>
                                 </div>
                             </div>
@@ -90,17 +90,33 @@
                             </div>
                             <!--Email-->
                             <div class="row">
-                                <div class="col-md-8 col-sm-8">
+                                <div class="col-md-8 col-sx-8">
                                     <div class="md-form">
                                         <input type="text" id="email" name="email" class="form-control"
-                                            placeholder="john@smith.com">
+                                            placeholder="john@sxith.com">
                                         <label for="email" class="">Your email</label>
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Dropdown menu -->
+                            <div class="row">
+                                    <div class="col-md-11 col-sx-11">
+                                        <div class="md-form">
+                                            <select class="custom-select mr-sx-2" id="inlineFormCustomSelect">
+                                                <option selected>Which service are you contacting us about?</option>
+                                                <option value="1">Washing and Mask</option>
+                                                <option value="2">Styling</option>
+                                                <option value="3">Promo: highlights, Styling and Mask</option>
+                                            </select>
+                                            <label for="select" class="">Please choose an option </label>
+                                        </div>
+                                    </div>
+                                </div>
+    
                             <!--Subject-->
                             <div class="row">
-                                <div class="col-md-10 col-sm-10">
+                                <div class="col-md-10 col-sx-10">
                                     <div class="md-form">
                                         <input type="text" id="subject" name="subject" class="form-control"
                                             placeholder="Subject">
@@ -108,9 +124,10 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!--Message-->
                             <div class="row">
-                                <div class="col-md-11 col-sm-11">
+                                <div class="col-md-11 col-sx-11">
                                     <div class="md-form">
                                         <textarea type="text" id="message" name="message" rows="2"
                                             class="form-control md-textarea"
@@ -119,12 +136,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Submit-->
-                            <div class="text-center text-md-left">
-                                <a class="btn btn-info"
-                                    onclick="document.getElementById('contact-form').submit();">Send</a>
+
+                            <!-- checkbox -->
+                            <div class="row">
+                                <div class="col-md-11 col-sx-11">
+                                    <div class="md-form">
+                                        <div class="custom-control custom-checkbox mr-sx-2">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="customControlAutosizing">
+                                            <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit button -->
+                            <!-- glyphicone not working! -->
+                            <div class="text-center text-md-left"><span class="glyphicon glyphicon-send"></span>
+                            <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();"> <span class="glyphicon glyphicon-send"></span> Send</a> 
                             </div>
                             <div class="status"></div>
+
+                            <!-- END FORM -->
                         </form>
                     </div>
                 </div>
@@ -132,7 +165,7 @@
 
 
             <!-- JUMBOTRON -->
-            <aside class="col-md-6 col-sm-12">
+            <aside class="col-md-6 col-sx-12">
                 <!-- jumbotron1 -->
                 <h1 class="display-4">Do you have any questions?</h1>
                 <p class="lead"></p>
@@ -163,7 +196,7 @@
     </section>
 
     <!-- footer -->
-    <footer class=" col-md-12 col -sm-12 page-footer text-center">
+    <footer class=" col-md-12 col -sx-12 page-footer text-center">
         <br>
         <h6 class="text-uppercase font-weight-bold">Follow us on social media</h6><br>
         <div class="social">
@@ -180,13 +213,13 @@
 
     <!-- JS files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5sxXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        integrity="sha384-JjsxVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
 
