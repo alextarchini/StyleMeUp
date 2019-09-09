@@ -59,8 +59,8 @@
     <!-- Main section -->
     <section class="col-md-12 col-sx-12">
         <div class="row">
-            <article class="col-md-6 col-sx-12" >
-                <div class="row bg-gray">
+            <article class="col-md-6 col-sx-12">
+                <div class="row bg-gray contact">
                     <div class="col-md-10 col-sx-12">
                         <!-- Contact form -->
                         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
@@ -76,7 +76,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-md-4">
                                     <input type="text" id="surname" name="surname" class="form-control"
-                                        placeholder="sxith">
+                                        placeholder="Smith">
                                     <label for="name" class="">Your Surname</label>
                                 </div>
                             </div>
@@ -93,27 +93,27 @@
                                 <div class="col-md-8 col-sx-8">
                                     <div class="md-form">
                                         <input type="text" id="email" name="email" class="form-control"
-                                            placeholder="john@sxith.com">
+                                            placeholder="john@smith.com">
                                         <label for="email" class="">Your email</label>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Dropdown menu -->
                             <div class="row">
-                                    <div class="col-md-11 col-sx-11">
-                                        <div class="md-form">
-                                            <select class="custom-select mr-sx-2" id="inlineFormCustomSelect">
-                                                <option selected>Which service are you contacting us about?</option>
-                                                <option value="1">Washing and Mask</option>
-                                                <option value="2">Styling</option>
-                                                <option value="3">Promo: highlights, Styling and Mask</option>
-                                            </select>
-                                            <label for="select" class="">Please choose an option </label>
-                                        </div>
+                                <div class="col-md-11 col-sx-11">
+                                    <div class="md-form">
+                                        <select class="custom-select mr-sx-2" id="inlineFormCustomSelect">
+                                            <option selected>Which service are you contacting us about?</option>
+                                            <option value="1">Washing and Mask</option>
+                                            <option value="2">Styling</option>
+                                            <option value="3">Promo: highlights, Styling and Mask</option>
+                                        </select>
+                                        <label for="select" class="">Please choose an option </label>
                                     </div>
                                 </div>
-    
+                            </div>
+
                             <!--Subject-->
                             <div class="row">
                                 <div class="col-md-10 col-sx-10">
@@ -144,16 +144,18 @@
                                         <div class="custom-control custom-checkbox mr-sx-2">
                                             <input type="checkbox" class="custom-control-input"
                                                 id="customControlAutosizing">
-                                            <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+                                            <label class="custom-control-label" for="customControlAutosizing">Remember
+                                                my preference</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
+                            <br>
                             <!-- Submit button -->
                             <!-- glyphicone not working! -->
-                            <div class="text-center text-md-left"><span class="glyphicon glyphicon-send"></span>
-                            <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();"> <span class="glyphicon glyphicon-send"></span> Send</a> 
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-info" onclick="document.getElementById('contact-form').submit();"> <i
+                                        class="far fa-paper-plane"></i> Send</a>
                             </div>
                             <div class="status"></div>
 

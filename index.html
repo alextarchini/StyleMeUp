@@ -11,19 +11,29 @@
     <!-- Bootsrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Call the carousel -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
     <title>StyleMeUp - Home Page</title>
 </head>
 
 <body>
     <header class="banner">
         <div class="row">
-            <div class="col-md-4 col-sx-4">
+            <div class="logo col-md-4 col-sx-4">
                 <img class="img-fluid" src="./images/logoStyleMeUp.png" width="" alt="logo">
             </div>
             <div class="col-md-8 col-sx-8">
                 <br>
                 <!-- Function JS type in name -->
-                <button class="btn btn-info btn-lg" onclick="myFunction()">Click me</button>
+
                 <h1 id="demo" style="color:#222"></h1>
                 <!-- or this color: #aaffc3" -->
                 <!-- end JS -->
@@ -75,28 +85,28 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./images/banner5.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <img src="./images/banner4.jpg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>It's time to relax</h5>
+                                <h5>Tired of doing your hair yourself?!</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/banner4.jpg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <img src="./images/banner5.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Tired of doing your hair yourself?</h5>
+                                <h5>All natural!</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="./images/banner6.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Cause you are worth it</h5>
+                                <h5>It's time to relax!</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./images/banner6.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
+                            <img src="./images/pex3.jpeg" class="d-block w-100 img-thumbnail img-fluid" alt="pic">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Cause you are worth it</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -157,8 +167,10 @@
                 <p class="lead">Personal stylist in the comfort of your own home?! Cause you are worth it- you deserve a
                     little pamper and you can totally afford it!</p>
                 <hr class="my-4">
-                <p>Would you like to book an appointment with us?</p>
-                <a class="btn btn-info btn-lg" href="#" role="button">Book an appointment</a>
+                <p>Would you like to book an appointment with us? Book an appointment</p>
+                <!-- GLYPHICON in the button-->
+                <a class="btn btn-info btn-lg" href="./services.html" role="button">
+                    <i class="far fa-calendar-times"></i> Book an appointment</a>
             </div>
             <!-- end jumbotron-->
         </aside>
@@ -172,7 +184,8 @@
             <p class="lead">Pays us a visit!</p>
             <hr class="my-4">
             <p>Would you like to learn about promo prices for 2019?</p>
-            <a class="btn btn-info btn-lg" href="./services.html" role="button">Learn more</a>
+            <a class="btn btn-info btn-lg" href="./services.html" role="button"><i class="fas fa-book"></i> Learn
+                more</a>
         </div>
         <!-- end jumbotron-->
     </section>
@@ -192,13 +205,14 @@
 
     <!-- JS script for name typing top of page -->
     <script>
-        function myFunction() {
+        window.addEventListener("load", () => {
             var person = prompt("Please enter your name", "Harry Potter");
             if (person != null) {
                 document.getElementById("demo").innerHTML =
                     "Hello " + person + "! How are you today?";
             }
         }
+        )
     </script>
 
 

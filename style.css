@@ -1,3 +1,29 @@
+body {
+  overflow-x: hidden;
+}
+/* logo animation */
+.logo {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    left: 700px;
+    top: -75px;
+  /*   top: 0px; */
+  }
+  50% {
+    left: 500px;
+    top: -25px;
+  }
+  100% {
+    left: 0px;
+    top: -50px;
+  }
+}
+/* BANNER */
 .banner {
   background-image:url(./images/banner2.jpeg);
   background-repeat: no-repeat;
@@ -88,4 +114,21 @@ footer , div {
   padding:0 !important;
   margin: 0 !important;
 }
-
+/* SPECIFIC PAGES DIVS */
+.custom-control-label {
+  margin-left: 40px;
+}
+.col-md-6 /* .col-sx-12 .contact */ {
+  padding-left: 5px !important;
+}
+.btn > i {
+  color: white;
+  margin: 0 !important;
+}
+/* map media query */
+/* @media screen and (max-width:500px) {
+  #gmap_canvas {
+    width: 250px;
+  }
+} */
+.card-deck col-md-12 col-sx-12
