@@ -49,10 +49,6 @@ active >.nav-link {
   color: white !important;
 }
 /* CAROUSEL and JAMBOTRON */
-.carousel .item {
-height: 30%;
-}
-
 h5 {
   color: #17a2b8 !important;
 }
