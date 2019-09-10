@@ -129,9 +129,11 @@ footer , div {
   color: white;
   margin: 0 !important;
 }
-/* map media query */
-/* @media screen and (max-width:500px) {
-  #gmap_canvas {
-    width: 250px;
-  }
-} */
+@media screen and (max-width:500px) {
+/*   #gmap_canvas {
+    height: 250px;
+  } */
+  .carousel .item {
+    height: 100px;;
+    }
+}
